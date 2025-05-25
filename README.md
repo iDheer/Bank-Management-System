@@ -1,4 +1,4 @@
-# 📖 **Bank Management System (Enhanced)** 💼🏦  
+# 📖 **Bank Management System** 💼🏦  
 
 Welcome to the **Bank Management System** project! This system allows users to manage bank accounts efficiently, supporting operations such as account creation, deletion, transactions, and balance management. This README will guide you through the structure, logic, and usage of the system, based on the `q1.c` implementation.
 
