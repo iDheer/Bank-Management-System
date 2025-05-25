@@ -1,9 +1,9 @@
 # 📖 **Bank Management System** 💼🏦  
 
-Welcome to the **Bank Management System** project! This system allows users to manage bank accounts efficiently, supporting operations such as account creation, deletion, transactions, and balance management. This README will guide you through the structure, logic, and usage of the system, based on the `q1.c` implementation.
+Welcome to the **Bank Management System** project! This system allows users to manage bank accounts efficiently, supporting operations such as account creation, deletion, transactions, and balance management. This README will guide you through the structure, logic, and usage of the system, based on the `bank.c` implementation.
 
 # Author
-**Shreyas Mehta (Original `bank.c` concept), Adapted for `q1.c`**
+Adapted for `bank.c`
 
 ---
 
@@ -36,7 +36,7 @@ Welcome to the **Bank Management System** project! This system allows users to m
 
 ```plaintext
 .
-├── q1.c        # Main logic file with all function implementations
+├── bank.c      # Main logic file with all function implementations
 └── README.md   # This file
 ```
 
@@ -85,7 +85,7 @@ int globalNextAccountNumber = 100; // Starting point for new account numbers if 
 
 ---
 
-## 📝 **Key Functions in `q1.c`**
+## 📝 **Key Functions in `bank.c`**
 
 ### 1. **`AccountList createAccount(DeletedAccountNumList *deletedNumsListHead, AccountList list, AccountType accountType, const char *Name, float Amount)`**  
   Creates a new account. It first checks if there are any recycled account numbers in `deletedNumsListHead`. If so, it uses the smallest available recycled number. Otherwise, it generates a new number using `globalNextAccountNumber`. Dynamically allocates memory for the account name.
@@ -121,18 +121,18 @@ int globalNextAccountNumber = 100; // Starting point for new account numbers if 
 
 ## 🚀 **How to Run**  
 
-1. **Save the code** as `q1.c`.
+1. **Save the code** as `bank.c`.
 
 2. **Compile the program** (using GCC as an example):
    ```bash
-   gcc q1.c -o bank_q1
+   gcc bank.c -o bank_system
    ```
 
 3. **Run the program**:
    ```bash
-   ./bank_q1
+   ./bank_system
    ```
-   (On Windows, you might run `.\bank_q1.exe` if compiled with MinGW/GCC)
+   (On Windows, you might run `.\bank_system.exe` if compiled with MinGW/GCC)
 
 4. **Interact with the program**: 
    - Type one of the following commands when prompted:
